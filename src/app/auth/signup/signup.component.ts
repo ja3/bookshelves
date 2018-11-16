@@ -26,7 +26,7 @@ export class SignupComponent implements OnInit {
       email: ['', [Validators.required, Validators.email]],
       password: ['', [Validators.required, Validators.pattern(/[0-9a-zA-Z]{6,}/)]]
     });
-  }
+  } 
 
   onSubmit() {
     const email = this.signupForm.get('email').value;
